@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="AutoRecognize.MVVM.Client.Views.UserControls.AdminControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AutoRecognize.MVVM.Client.Views.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600"
+             Height="400" Width="600"
+             >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Skins/MainSkin.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style BasedOn="{StaticResource glyphicon}" TargetType="{x:Type Path}">
+                <Setter Property="Margin" Value="0,15"></Setter>
+            </Style>
+        </ResourceDictionary>
+
+    </UserControl.Resources>
+
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Resources/Image/Backgound/flower02bg.png">
+            </ImageBrush>
+        </Grid.Background>
+        <StackPanel Orientation="Horizontal" Margin="120,0,0,0" VerticalAlignment="Center"   >
+            <TextBox x:Name="user" InputMethod.IsInputMethodEnabled="False" Text="" Width="300" FontSize="20"   Margin="20,0,0,0" BorderThickness="2"  Style="{DynamicResource input-group-btn left}">
+                <TextBox.Tag>
+                    <Path Style="{DynamicResource InputGroupPathStyle}" Data="{DynamicResource glyphicon-user}"></Path>
+                </TextBox.Tag>
+            </TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="120,100,0,0" VerticalAlignment="Center">
+            <PasswordBox x:Name="pass" InputMethod.IsInputMethodEnabled="False" Password=""  Width="300" FontSize="20"  Margin="20,0,0,0" BorderThickness="2" Style="{DynamicResource input-group-btn left}">
+                <PasswordBox.Tag>
+                    <Path Style="{DynamicResource InputGroupPathStyle}" Data="{DynamicResource glyphicon-eye-close}"></Path>
+                </PasswordBox.Tag>
+            </PasswordBox>
+        </StackPanel>
+       <StackPanel Orientation="Horizontal" Margin="140,200,0,0" VerticalAlignment="Center">
+            <Button Content="登录" Style="{DynamicResource btn-success}" Margin="120,0,0,0" />
+            <Button Content="取消" Style="{DynamicResource btn-danger}" Margin="20,0,0,0" />
+        </StackPanel>
+    </Grid>
+</UserControl>
