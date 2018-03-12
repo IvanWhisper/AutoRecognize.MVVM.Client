@@ -44,6 +44,9 @@ namespace AutoRecognize.MVVM.Client.ViewModel
 
             SimpleIoc.Default.Register<BothWayBindViewModel>();
             SimpleIoc.Default.Register<PackagedValidateViewModel>();
+
+            SimpleIoc.Default.Register<CommandViewModel>();
+
         }
 
         /// <summary>
@@ -93,6 +96,13 @@ namespace AutoRecognize.MVVM.Client.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<PackagedValidateViewModel>();
+            }
+        }
+        public CommandViewModel Command
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<CommandViewModel>();
             }
         }
         /// <summary>

@@ -1,6 +1,7 @@
 ﻿using AutoRecognize.MVVM.Client.Model;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using System;
 using System.Windows;
 
 namespace AutoRecognize.MVVM.Client.ViewModel

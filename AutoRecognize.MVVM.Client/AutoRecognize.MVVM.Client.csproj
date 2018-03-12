@@ -79,17 +79,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Convert\UserInfoConvert.cs" />
     <Compile Include="Design\DesignDataService.cs" />
     <Compile Include="Model\ComplexInfoModel.cs" />
     <Compile Include="Model\DataItem.cs" />
     <Compile Include="Model\DataService.cs" />
     <Compile Include="Model\IDataService.cs" />
     <Compile Include="Model\RadioChoose.cs" />
+    <Compile Include="Model\ResTypes.cs" />
     <Compile Include="Model\UserInfoModel.cs" />
+    <Compile Include="Model\UserParam.cs" />
     <Compile Include="Model\ValidateModelBase.cs" />
     <Compile Include="Model\ValidateUserInfo.cs" />
     <Compile Include="ViewModel\AdminControlVModel.cs" />
     <Compile Include="ViewModel\BothWayBindViewModel.cs" />
+    <Compile Include="ViewModel\CommandViewModel.cs" />
     <Compile Include="ViewModel\FlipLoginViewModel.cs" />
     <Compile Include="ViewModel\LoginControlVModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
